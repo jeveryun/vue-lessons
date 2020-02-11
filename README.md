@@ -1,2 +1,2 @@
-# vue-lessonss
+# vue-lessons
 vue lesson
