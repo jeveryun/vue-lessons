@@ -3,6 +3,7 @@ import Vue from 'vue'
 export default function create(Component, props) {
     const vm = new Vue({
         render(h) {
+            // h就是createElement,创建虚拟dom
             return h(Component , {props})
         }
     }).$mount()
