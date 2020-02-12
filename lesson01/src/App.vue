@@ -3,8 +3,8 @@
         <!-- <CompCommunicate /> -->
         <!-- <SlotsTest></SlotsTest> -->
 <!--         <Recursion></Recursion>-->
-         <FormSample></FormSample>
-<!--        <Tree></Tree>-->
+<!--         <FormSample></FormSample>-->
+        <Tree></Tree>
     </div>
 </template>
 
@@ -13,7 +13,7 @@
     import SlotsTest from "./components/slots";
     import Recursion from "./components/recursion";
     import FormSample from "./components/form";
-    // import Tree from "./components/tree";
+    import Tree from "./components/tree";
 
     export default {
         name: "app",
@@ -22,7 +22,7 @@
             SlotsTest,
             Recursion,
             FormSample,
-            // Tree
+            Tree
         }
     };
 </script>
