@@ -1,31 +1,12 @@
 <template>
-    <div id="app">
-        <!-- <CompCommunicate /> -->
-        <!-- <SlotsTest></SlotsTest> -->
-<!--         <Recursion></Recursion>-->
-<!--         <FormSample></FormSample>-->
-        <Tree></Tree>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
     </div>
+    <router-view/>
+  </div>
 </template>
-
-<script>
-    import CompCommunicate from "./components/communicate";
-    import SlotsTest from "./components/slots";
-    import Recursion from "./components/recursion";
-    import FormSample from "./components/form";
-    import Tree from "./components/tree";
-
-    export default {
-        name: "app",
-        components: {
-            CompCommunicate,
-            SlotsTest,
-            Recursion,
-            FormSample,
-            Tree
-        }
-    };
-</script>
 
 <style>
     #app {

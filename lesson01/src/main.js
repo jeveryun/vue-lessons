@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import create from '@/utils/create'
+import router from './krouter'
 
 Vue.config.productionTip = false
 Vue.prototype.$dispatch = function (eventName, data) {
@@ -45,5 +46,6 @@ Vue.prototype.$bus = new Bus()
 Vue.prototype.$create = create
 
 new Vue({
+  router,
   render: h => h(App)
 }).$mount('#app')
