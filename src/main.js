@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 import create from '@/utils/create'
-import router from './krouter'
-import store from './kstore'
+import router from './jrouter'
+import store from './jstore'
 
 Vue.config.productionTip = false
 Vue.prototype.$dispatch = function (eventName, data) {
