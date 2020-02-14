@@ -37,15 +37,18 @@ class VueRouter {
     }
 
     initComponent() {
+        console.log(111)
         Vue.component('router-link', {
             props: {to: String},
             render(h) {
+                console.log(222)
                 return h('a', {attrs: {href: '#' + this.to}}, [this.$slots.default])
             }
         })
 
         Vue.component('router-view', {
             render: (h) => {
+                console.log(333)
                 const comp = this.routeMap[this.app.current]
                 return h(comp)
             }
@@ -58,7 +61,6 @@ VueRouter.install = function (Vue) {
     Vue.mixin({
         beforeCreate() {
             // this是Vue实例
-            console.log(this.$options)
             if (this.$options.router) {
                 Vue.prototype.$router = this.$options.router
                 this.$options.router.init()
